@@ -47,7 +47,7 @@ public class Main extends AppCompatActivity {
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-         
+
             }
         });
         btnLogin.setOnClickListener(new View.OnClickListener() {
