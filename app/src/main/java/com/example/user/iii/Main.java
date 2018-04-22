@@ -47,22 +47,7 @@ public class Main extends AppCompatActivity {
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView txtclose;
-                Button btnFollow;
-                myDialog.setContentView(R.layout.custompopup);
-                txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-                txtclose.setText("M");
-
-                txtclose.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        myDialog.dismiss();
-                    }
-                });
-                myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                myDialog.show();
-
-
+         
             }
         });
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +77,7 @@ public class Main extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         // if this button is clicked, close
-                        // current activity
+                        // curent activity
                         Main.this.finish();
                     }
                 })
